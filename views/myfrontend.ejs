@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="static/style.css">
+    <title>stoke api-landing page</title>
+
+</head>
+
+<body>
+
+
+    <div class="navigation">
+        <select name="select" id="select">
+            <option value="NSE"><a href="#"></a>NSE</option>
+            <option value="BSE"><a href="#"></a>BSE</option> 
+    
+        </select>
+        <div class="usernamelogout">
+            <div class="username">Hii <%= user.username %></div>
+            <a class="btn btn-danger" href="/logout">Logout</a>
+        </div>
+    </div>
+    
+
+
+
+    <h1 style=" margin-top: 12px;margin-left: 8.1rem;">NIFTY50</h1>
+
+    <hr style="height:12px;border-width:0;color:rgb(184, 178, 178);background-color:rgb(199, 191, 191); width: 80%; ">
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p style="font-size: 4rem; font-weight: bold; margin-bottom: 0.2rem;">11,323.85</p>
+                <p style="font-weight: bold; color: green; font-size: 2rem">&uarr; 23.40(0.21%)</p>
+                <p id="demo"></p>
+            </div>
+            <div class="col">
+                Day range
+                <div class="dayrange">
+                    <p>11,315.25</p>
+                    <p>11,361.40</p>
+                </div>
+                <div class="line">
+                    <div>L</div>
+                    <hr style="width: 90%; border: 1px solid black;">
+                    <div>H</div>
+                </div>
+                <br>
+                52 Week range
+                <div class="dayrange">
+                    <p>7,511.10</p>
+                    <p>12,430.50</p>
+                </div>
+                <div class="line">
+                    <div>L</div>
+                    <hr style="width: 90%; border: 1px solid black;">
+                    <div>H</div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="dashed">
+        <br>
+        <hr style="border-top: 1px solid black;">
+        <div>overview</div>
+        <hr style="border-top: 1px solid black;">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="overview">
+                        <div>Open</div>
+                        <div>11,353.30</div>
+                    </div>
+
+                    <div class="overview">
+                        <div>Previous Close</div>
+                        <div>11,300.45</div>
+                    </div>
+
+                    <div class="overview">
+                        <div>Day High</div>
+                        <div>11,361.40</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="overview">
+                        <div>Day Low</div>
+                        <div>11,315.25</div>
+                    </div>
+
+                    <div class="overview">
+                        <div>52 Week High</div>
+                        <div>12,430.50</div>
+                    </div>
+
+                    <div class="overview">
+                        <div>52 Week Low</div>
+                        <div>11,361.40</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="graphsheet">
+            <select name="companies" id="companies">
+                <option value="RELIANCE"><a href="#"></a>RELIANCE</option>
+                <option value="ASHOKLEY"><a href="#"></a>ASHOKLEY</option>
+                <option value="CIPLA"><a href="#"></a>CIPLA</option>
+                <option value="EICHERMOT"><a href="#"></a>EICHERMOT</option>
+                <option value="TATASTEEL"><a href="#"></a>TATASTEEL</option>
+            </select>
+            <div id="chartsheading"> <h2>CHARTS</h2></div> 
+            <hr style="width: 10%; height: 10px; background-color: orange;"> 
+            <div class="chartsmall"><h4>Chart</h4></div>
+        
+            <hr style="border: 1px solid rgba(255, 255, 255, 0.911); width: 90%;">
+
+            <div class="buttonbox">
+                <button type="button" class="btn btn-info m-1">1D</button>
+                <button type="button" class="btn btn-info m-1">1W</button>
+                <button type="button" class="btn btn-info m-1">1M</button>
+                <button type="button" class="btn btn-info m-1">3M</button>
+                <button type="button" class="btn btn-info m-1">6M</button>
+                <button type="button" class="btn btn-info m-1">1Y</button>
+                <button type="button" class="btn btn-info m-1">2Y</button>
+                <button type="button" class="btn btn-info m-1">5Y</button>
+                <button type="button" class="btn btn-info m-1">ALL</button>
+                
+            </div>
+
+            <div class="details">
+                <div class="wholeword">
+                    <div class="smallshade">27jan2020</div>
+                </div>
+                <div class="wholeword">
+                    <div class="smallshade">Open:</div>
+                    <div class="largeclear">1500.97</div>
+                </div>
+                <div class="wholeword">
+                    <div class="smallshade">High:</div>
+                    <div class="largeclear">1510.63</div>
+                </div>
+                <div class="wholeword">
+                    <div class="smallshade">Low:</div>
+                    <div class="largeclear">1490.87</div>
+                </div>
+                <div class="wholeword">
+                    <div class="smallshade">Close:</div>
+                    <div class="largeclear">1492.40</div>
+                </div>
+                <div class="wholeword">
+                    <div class="smallshade">Volume:</div>
+                    <div class="largeclear">6178447</div>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div id="chart_div" class="graph"></div>
+
+
+        
+
+        </div>
+
+
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="/static/index.js"></script>
+        <script>
+            var d = new Date();
+            document.getElementById("demo").innerHTML = d;
+        </script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
